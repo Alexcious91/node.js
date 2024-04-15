@@ -1,7 +1,7 @@
 {
-  "name": "expressrouting",
+  "name": "lesson_10",
   "version": "1.0.0",
-  "description": "Express routing",
+  "description": "Express app",
   "main": "app.js",
   "scripts": {
     "devStart": "nodemon app.js"
@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "ejs": "^3.1.9",
     "express": "^4.19.2",
     "nodemon": "^3.1.0"
   }

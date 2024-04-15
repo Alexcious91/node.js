@@ -5,13 +5,12 @@ const port = 3000;
 
 app.get("/", (req, res) => {
     res.send("<h1>Hello</h1>");
-    console.log(req.params);
-    console.log(req.body);
-    console.log(req.query);
 });
 
 app.get("/about", (req, res) => {
     res.send("<h1>About page</h1>");
+    const data = "Hello"
+    res.send(data)
 });
 
 app.listen(port, () => {
