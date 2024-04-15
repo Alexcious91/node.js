@@ -23,12 +23,11 @@ router.get("/", (req, res) => {
 	res.writeHead(httpStatusCodes.OK, plainTextContentType);
 	res.end("<h1>Index</h1>");
 });
-router.get("/index.html", (req, res) => {
-	res.writeHead(httpStatusCodes.OK, htmlContentType);
-	customReadFile("views/index.html", res);
-});
+
 router.get("/index", (req, res) => {
 	res.writeHead(httpStatusCodes.OK, htmlContentType)
+	// res.end("./views/index.html");
+	customReadFile("./views/index.html", res)
 })
 router.post("/", (req, res) => {
 	res.writeHead(httpStatusCodes.OK, htmlContentType);
